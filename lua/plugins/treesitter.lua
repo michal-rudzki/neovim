@@ -18,7 +18,7 @@ return {
       indent = { enable = true },
     })
 
-    local setting = require("nvim-treesitter.install")
-    setting.compilers = { "clang" }
+    local compiler = require("nvim-treesitter.install")
+    compiler.compilers = { "clang", "gcc" }
   end
 }
