@@ -19,9 +19,10 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({}) -- language server for lua
-      lspconfig.pyright.setup({}) -- language server for python
-      lspconfig.powershell_es.setup({}) -- language server for powershell_es
       lspconfig.ansiblels.setup({}) -- language server for ansible
+      lspconfig.pyright.setup({}) -- language server for python
+      lspconfig.pylsp.setup({}) -- language server for pylsp
+      lspconfig.powershell_es.setup({}) -- language server for powershell_es
       lspconfig.hydra_lsp.setup({}) -- language server for yaml (hydra_lsp)
       lspconfig.marksman.setup({}) -- language server for markdown
 

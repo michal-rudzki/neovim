@@ -17,6 +17,10 @@ local global = vim.g
 global.mapleader = " "
 global.mallocalleader = " "
 
+-- vim.cmd("set verbosefile=~/nvim.log")
+-- vim.cmd("set verbose=15")
+-- vim.cmd('let $NVIM_LOG_FILE = expand("~/nvim.log")')
+
 require("lazy").setup("plugins")
 
 -- Those modules are not loaded by lazy

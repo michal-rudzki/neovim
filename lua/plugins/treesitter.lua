@@ -8,17 +8,17 @@ return {
   config = function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ignore_install = { "c", "lua" },
-      ensure_installed = { "regex" },
+      -- ignore_install = { "" },
+      ensure_installed = { "c", "lua", "regex", "vim", "bash", "markdown", "markdown_inline", "python" },
       sync_install = false,
       highlight = {
-        disable = { "c", "lua" },
-        -- enable = true
+        -- disable = { "c", "lua" },
+        enable = true
       },
       indent = { enable = true },
     })
 
     local setting = require("nvim-treesitter.install")
-    setting.compilers = { "gcc" }
+    setting.compilers = { "clang" }
   end
 }
