@@ -1,3 +1,7 @@
+local opts = {}
+local global = vim.g
+local vim = vim
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -11,14 +15,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local opts = {}
-local global = vim.g
+
 -- Map <leader>
 global.mapleader = " "
 global.mallocalleader = " "
 
+-- Font
+-- vim.fn.system.Font.guifont = "CaskaydiaCove NFM:h12:Regular"
+
 -- vim.cmd("set verbosefile=~/nvim.log")
--- vim.cmd("set verbose=15")
+-- vim.cmd("set debug")
 -- vim.cmd('let $NVIM_LOG_FILE = expand("~/nvim.log")')
 
 require("lazy").setup("plugins")

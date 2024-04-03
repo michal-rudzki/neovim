@@ -1,14 +1,20 @@
 local global = vim.g
 local opt = vim.opt
 
+-- nvim-tree options
+-- disable netrw ar the very start of the init
+-- global.loaded_netrw = 1
+-- global.loaded_netrwPlugin = 1
+-- global.termguicolors = true
 
 vim.scriptenconding = "utf-8" -- set encoding to utf-8 for scripts
 vim.mouse = a
 -- Fonts configuration
--- global.guifont = SauceCodePro NF:h14:Regular
+-- global.guifont = "SauceCodePro NF:h14:Regular"
+opt.colorcolumn = '80'
 
-global.coloscheme = "catppucin"
---
+global.coloscheme = "monokai-pro"
+
 -- Font type
 -- opt.guifont = { "Arial", "h14" }
 
@@ -22,7 +28,6 @@ opt.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,te
 -- line number
 opt.number = true
 opt.relativenumber = true
-vim.wo.colorcolumn = '80'
 
 -- tabs & indentation
 opt.tabstop = 2
@@ -36,4 +41,5 @@ opt.backspace = "indent,eol,start"
 
 -- cursor line
 opt.cursorline = true
+
 

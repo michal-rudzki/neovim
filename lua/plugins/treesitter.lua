@@ -9,7 +9,8 @@ return {
     local config = require("nvim-treesitter.configs")
     config.setup({
       -- ignore_install = { "" },
-      ensure_installed = { "c", "lua", "regex", "vim", "bash", "markdown", "markdown_inline", "python" },
+      -- ensure_installed = { "c", "lua", "regex", "vim", "bash", "markdown", "markdown_inline", "python", "yaml" },
+      auto_install = true, -- automatically install
       sync_install = false,
       highlight = {
         -- disable = { "c", "lua" },
